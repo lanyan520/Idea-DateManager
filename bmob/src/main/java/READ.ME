@@ -1,0 +1,12 @@
+#init sdk
+Bmob.initialize(this, "Your Application ID");
+
+BmobConfig config =new BmobConfig.Builder(this)
+        .setApplicationId("Your Application ID")
+        .setConnectTimeout(30)
+        .setUploadBlockSize(1024*1024)
+        .setFileExpiration(2500)
+        .build();
+Bmob.initialize(config);
+
+#
